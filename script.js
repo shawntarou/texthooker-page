@@ -262,7 +262,7 @@ function deleteLastLine() {
 }
 
 function jumpBottomPage() {
-    document.querySelector('body > div:last-of-type').scrollIntoView({ behavior: 'instant', block: 'start' });
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
 }
 
 function initFromLocalStorage() {
