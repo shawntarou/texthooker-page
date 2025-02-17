@@ -117,7 +117,6 @@ let callback = function (mutations) {
 
                 var LEEWAY = 200; // Amount of "leeway" pixels before latching onto the bottom.
 
-                // Some obscene browser shit because making sense is for dweebs
                 var b = document.body;
                 var offset = b.scrollHeight - b.offsetHeight;
                 var scrollPos = (b.scrollTop + offset);
@@ -260,7 +259,11 @@ function deleteLastLine() {
         var last_line = lines[line_count - 1].getElementsByClassName("remove_button")[0];
         delet(last_line);
     }
-};
+}
+
+function jumpBottomPage() {
+    document.querySelector('body > div:last-of-type').scrollIntoView({ behavior: 'instant', block: 'start' });
+}
 
 function initFromLocalStorage() {
     // Set font size

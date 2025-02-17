@@ -41,18 +41,6 @@ body {
     }
 }
 
-.remove_button {
-    background-color: rgba(25, 25, 25, 0.0);
-    color: #9d9d9d;
-    display: inline-block;
-    font-size: .5em;
-    line-height: 100%;
-    margin-left: 8px;
-    margin-bottom: 2px;
-    padding: 5px;
-    visibility: hidden;
-}
-
 .line_box:hover>.remove_button {
     visibility: visible;
 }
@@ -91,6 +79,20 @@ body {
 }
 
 #undo_button {
+    background-color: rgba(25, 25, 25, 0.8);
+    color: #9d9d9d;
+    font-size: .5em;
+    line-height: 100%;
+    float: right;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#bottom_button{
     background-color: rgba(25, 25, 25, 0.8);
     color: #9d9d9d;
     font-size: .5em;
